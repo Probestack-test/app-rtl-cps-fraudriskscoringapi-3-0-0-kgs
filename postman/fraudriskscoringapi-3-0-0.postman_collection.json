@@ -1,0 +1,85 @@
+{
+  "info": {
+    "name": "fraudriskscoringapi-3-0-0 Postman Collection",
+    "description": "Operational baseline generated from observed Kong Konnect configuration.\n\nOpenAPI version: 3.0.3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "noauth"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://fraudriskscoringapi-3-0-0-upstream:80/v3",
+      "type": "string",
+      "description": "Override with the base URL of the deployed Kong gateway."
+    }
+  ],
+  "item": [
+    {
+      "name": "fraudriskscoringapi-3-0-0--postfeedback",
+      "request": {
+        "method": "POST",
+        "description": "fraudriskscoringapi-3-0-0--postfeedback\n\nResponses:\n- default: Runtime response semantics are not observable from Kong configuration.",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/internal/fraud/3.0.0/feedback",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "internal",
+            "fraud",
+            "3.0.0",
+            "feedback"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fraudriskscoringapi-3-0-0--postscores-login",
+      "request": {
+        "method": "POST",
+        "description": "fraudriskscoringapi-3-0-0--postscores-login\n\nResponses:\n- default: Runtime response semantics are not observable from Kong configuration.",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/internal/fraud/3.0.0/scores/login",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "internal",
+            "fraud",
+            "3.0.0",
+            "scores",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fraudriskscoringapi-3-0-0--postscores-transaction",
+      "request": {
+        "method": "POST",
+        "description": "fraudriskscoringapi-3-0-0--postscores-transaction\n\nResponses:\n- default: Runtime response semantics are not observable from Kong configuration.",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/internal/fraud/3.0.0/scores/transaction",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "internal",
+            "fraud",
+            "3.0.0",
+            "scores",
+            "transaction"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
